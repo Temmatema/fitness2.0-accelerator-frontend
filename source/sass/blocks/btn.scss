@@ -2,9 +2,13 @@
   display: inline-flex;
   padding: 10px 20px;
 
-  color: $color-default-white;
+  color: $color-default-sapphire;
+  font-family: $ff-roboto;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
 
-  background-color: $color-neon-blue;
+  background-color: transparent;
   border: none;
   cursor: pointer;
 
