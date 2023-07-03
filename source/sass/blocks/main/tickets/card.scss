@@ -1,0 +1,162 @@
+.card {
+  background: $color-default-white;
+  padding: 7px;
+  min-height: 31vw;
+
+  @include hover {
+    background: linear-gradient(169deg, rgba(209,10,66,1) 0%, rgba(0,53,159,1) 100%);
+  }
+
+  @include focus {
+    outline: none;
+    background: linear-gradient(169deg, rgba(209,10,66,1) 0%, rgba(0,53,159,1) 100%);
+  }
+
+  @include vp-767 {
+    max-width: 442px;
+  }
+
+  @include vp-319 {
+    max-width: 90.91vw;
+  }
+}
+
+.card__wrap {
+  background-color: $color-default-white;
+  padding: 4.4vw 5.04vw;
+  min-height: 31vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include vp-767  {
+    padding: 7.69vw 14.34vw;
+    align-items: center;
+  }
+
+  @include vp-319 {
+    padding: 14.5vw 14.34vw;
+  }
+}
+
+.card__heading {
+  text-align: center;
+  font-size: 1.6vw;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 14px;
+
+  @include vp-767 {
+    font-size: 22px;
+  }
+
+  @include vp-319 {
+    font-size: 19px;
+    margin-bottom: 12px;
+  }
+}
+
+.card__desk {
+  text-align: center;
+  color: $color-chambray;
+  font-size: 14px;
+  margin-bottom: 84px;
+
+  @include vp-319 {
+    margin-bottom: 70px;
+  }
+}
+
+.card__price {
+  display: block;
+  color: $color-egyptian-blue;
+  font-size: 4vw;
+  font-family: $ff-roboto;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 53px;
+
+  svg {
+    width: 2.20vw;
+    height: 3.07vw;
+  }
+
+  &::before {
+    position: absolute;
+    color: #E8E8E8;
+    font-size: 170%;
+    font-family: $ff-roboto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+    z-index: -1;
+    left: -5.05vw;
+    width: 25vw; top: -3.44vw;
+  }
+
+  @include vp-767 {
+    font-size: 3.5rem;
+    white-space: nowrap;
+    margin-bottom: 49px;
+
+    &::before {
+      width: 130%;
+      top: -46px;
+    }
+
+    svg {
+      width: 30px;
+      height: 42px;
+    }
+  }
+
+  @include vp-319 {
+    font-size: 2.7rem;
+    margin-bottom: 44px;
+
+    &::before {
+      top: -35px;
+    }
+
+    svg {
+      width: 24px;
+      height: 33px;
+    }
+  }
+}
+
+.card--coach {
+  &::before {
+    content: attr(data-price);
+  }
+}
+
+.card--day {
+  &::before {
+    content: attr(data-price);
+  }
+}
+
+.card--full-day {
+  &::before {
+    content: attr(data-price);
+  }
+}
+
+.card__button {
+  text-transform: uppercase;
+  width: 15.08vw;
+  height: 4.69vw;
+  font-size: 0.62rem;
+  border: 2px solid #102654;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+
+  @include vp-767 {
+    width: 206px;
+    height: 64px;
+  }
+}
