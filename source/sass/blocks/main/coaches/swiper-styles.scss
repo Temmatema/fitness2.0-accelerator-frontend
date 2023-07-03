@@ -1,0 +1,99 @@
+.swiper {
+  width: 100%;
+  height: 290px;
+  position: relative;
+  overflow: hidden;
+  max-height: 294px;
+  max-width: 1460px;
+
+  @media (max-width: 1728px) {
+    max-width: 1159px;
+  }
+
+  @media (max-width: 1360px) {
+    width: 860px;
+  }
+
+  @media (max-width: 1075px) {
+    width: 550px;
+  }
+
+  @media (max-width: 688px) {
+    width: 268px;
+  }
+
+  @include vp-319 {
+    width: 226px;
+  }
+}
+
+.swiper-wrapper {
+  display: flex;
+  position: absolute;
+}
+
+.swiper__button {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+
+  @media (max-width: 360px) {
+    width: 19px;
+    height: 19px;
+    display: flex;
+    align-items: center;
+
+    svg {
+      width: inherit;height: inherit;
+    }
+  }
+}
+
+.swiper-slide {
+  width: 260px;
+  min-width: 260px;
+
+  @include vp-319 {
+    max-width: 226px;
+    min-width: auto;
+  }
+}
+
+.button-prev {
+  left: -4.03vw;
+
+  @media (max-width: 1360px) {
+    left: 0;
+  }
+
+  @media (max-width: 360px) {
+    left: -15px;
+  }
+
+  @include vp-319 {
+    left: -5px;
+    top: -10px;
+  }
+}
+
+.button-next {
+  right: -4.40vw;
+  transform: rotateZ(180deg);
+
+  @media (max-width: 1360px) {
+    right: 0;
+  }
+
+  @media (max-width: 360px) {
+    right: -15px;
+  }
+
+  @include vp-319 {
+    right: -5px;
+    top: -10px;
+  }
+}
