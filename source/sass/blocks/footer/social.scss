@@ -10,4 +10,38 @@
 
 .social__link {
   display: flex;
+
+  @include hover {
+    svg {
+      .social-link-1 {
+        fill: $color-egyptian-blue;
+      }
+      .social-link-2 {
+        fill: #FFFFFF;
+      }
+    }
+  }
+
+  @include focus {
+    outline: none;
+    svg {
+      .social-link-1 {
+        fill: $color-egyptian-blue;
+      }
+      .social-link-2 {
+        fill: #FFFFFF;
+      }
+    }
+  }
+
+  @include active {
+    svg {
+      .social-link-1 {
+        fill: $color-default-sapphire;
+      }
+      .social-link-2 {
+        fill: #FFFFFF;
+      }
+    }
+  }
 }

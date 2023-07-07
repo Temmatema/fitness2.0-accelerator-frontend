@@ -3,7 +3,7 @@
   grid-template-columns: auto 52.93vw;
   padding-top: 120px;
   padding-bottom: 120px;
-  gap: 24px;
+  gap: 20px;
 
   @include vp-1023 {
     grid-template-columns: 29.13vw 52.93vw;
@@ -48,34 +48,33 @@
   line-height: normal;
   letter-spacing: 1.44px;
   margin-bottom: 11px;
-  white-space: nowrap;
 
   @include vp-767 {
     font-size: 42px;
     letter-spacing: 1.26px;
     padding-right: 14px;
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
   }
 
   @include vp-319 {
     font-size: 9.9vw;
     padding: 0;
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
   }
 }
 
 .workout__caption {
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 1.12rem;
+  font-weight: 500;
   line-height: 150%;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 
   @include vp-767 {
-    padding-right: 3px;
     text-align: center;
     margin-bottom: 35px;
+    font-size: 18px;
   }
 
   @include vp-319 {
@@ -86,19 +85,21 @@
 }
 
 .workout__text {
-  font-size: 0.87rem;
-  font-weight: 300;
+  font-size: 0.9rem;
+  font-weight: 400;
   line-height: 24px;
 
   @include vp-767 {
     text-align: center;
     padding: 0 7vw;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
+    font-size: 0.91rem;
   }
 
   @include vp-319 {
     text-align: left;
     padding: 0 8vw 0 0;
+    margin-bottom: 17px;
   }
 }
 
@@ -178,12 +179,10 @@
     left: 0;
   }
 
-  span {
-    display: block;
+  div {
     width: 100px;
     height: 100px;
     position: absolute;
-    background-image: url("../img/main/play-button.svg");
     z-index: 3;
     top: 0;
     bottom: 0;
@@ -191,6 +190,75 @@
     right: 0;
     margin: auto;
     cursor: pointer;
+
+    svg {
+      circle {
+        transition: all 0.3s ease;
+      }
+
+      path {
+        transition: all 0.3s ease;
+      }
+
+      stop {
+        transition: all 0.3s ease;
+      }
+    }
+
+    @include hover {
+      .play-circle-1 {
+        stroke-opacity: 1;
+      }
+      .play-circle-2 {
+        fill: #FFFFFF;
+      }
+      .play-path {
+        fill: $color-default-sapphire;
+      }
+
+      svg {
+        stop {
+          stop-color: #102654;
+        }
+      }
+    }
+
+    @include focus {
+      outline: none;
+      .play-circle-1 {
+        stroke-opacity: 1;
+      }
+      .play-circle-2 {
+        fill: #FFFFFF;
+      }
+      .play-path {
+        fill: $color-default-sapphire;
+      }
+
+      svg {
+        stop {
+          stop-color: #102654;
+        }
+      }
+    }
+
+    @include active {
+      .play-circle-1 {
+        stroke-opacity: 1;
+      }
+      .play-circle-2 {
+        fill: #FFFFFF;
+      }
+      .play-path {
+        fill: $color-default-sapphire;
+      }
+
+      svg {
+        stop {
+          stop-color: #102654;
+        }
+      }
+    }
   }
 
   &::before {
@@ -208,7 +276,7 @@
       background-image: url("../img/main/preview-tablet.jpg");
     }
 
-    span {
+    div {
       transform: scale(0.7);
     }
   }
@@ -221,7 +289,7 @@
 }
 
 .workout__video[data-is-play="true"] {
-  span {
+  div {
     display: none;
   }
 
