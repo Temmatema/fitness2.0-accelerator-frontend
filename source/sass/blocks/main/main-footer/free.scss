@@ -1,0 +1,144 @@
+.free {
+  background-color: $color-default-sapphire;
+  flex: 1;
+
+  h2 {
+    color: $color-default-white;
+  }
+
+  input {
+    color: $color-default-white;
+    border: none;
+    background-color: transparent;
+    width: 190px;
+    font-size: 12px;
+    font-family: $ff-roboto;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px 10px 7px 0;
+    border-bottom: 1px solid #74819C;
+
+    &::placeholder {
+      color: $color-default-white;
+    }
+
+    &:hover {
+      border-color: $color-default-white;
+    }
+
+    &:focus {
+      outline: 1px solid $color-default-white;
+      padding-left: 10px;
+      border-color: transparent;
+
+      &::placeholder {
+        color: transparent;
+      }
+    }
+
+    &:active {
+      outline: 1px solid $color-default-white;
+    }
+  }
+
+  button {
+    color: $color-default-white;
+  }
+
+  @include vp-767 {
+    input {
+      width: 26.73vw;
+    }
+  }
+
+  @media (max-width: 550px) {
+    input {
+      width: 100%;
+    }
+  }
+}
+
+.free__wrap {
+  padding: 5.4vw 12.45vw 5.13vw 7.55vw;
+
+  @media (max-width: 1120px) {
+    padding: 66px 21.25vw 67px 17.34vw;
+  }
+
+  @media (max-width: 550px) {
+    padding: 67px 15px 68px;
+  }
+}
+
+.free__title {
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 1.62px;
+  margin-bottom: 27px;
+
+  @include vp-767 {
+    font-size: 42px;
+    letter-spacing: 1px;
+    margin-bottom: 33px;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 1.92rem;
+    margin-bottom: 34px;
+  }
+}
+
+.free__fields {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 28px;
+
+  @include vp-767 {
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 550px) {
+    flex-direction: column;
+    gap: 28px;
+    margin-bottom: 38px;
+  }
+}
+
+.free__input.is-invalid {
+  position: relative;
+
+  input {
+    border-color: #FF121F;
+
+    &:focus {
+      outline: 1px solid #FF121F;
+    }
+  }
+
+  span {
+    position: absolute;
+    font-family: $ff-roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    color: #FF121F;
+    left: 0;
+    bottom: -20px;
+    white-space: nowrap;
+  }
+}
+
+.free__btn {
+  width: 100%;
+  height: 55px;
+  border: 3px solid #FFF;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+
+}

@@ -1,0 +1,150 @@
+.answers {
+  background-color: #F8F9FC;
+  .container {
+    padding-top: 125px;
+    padding-bottom: 115px;
+  }
+
+  @include vp-767 {
+    .container {
+      padding-top: 103px;
+    }
+  }
+
+  @include vp-319 {
+    .container {
+      padding-top: 73px;
+      padding-bottom: 66px;
+    }
+  }
+}
+
+.answers__title {
+  font-size: 54px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.62px;
+  margin-bottom: 41px;
+
+  @include vp-767 {
+    text-align: center;
+    font-size: 42px;
+    letter-spacing: 1.26px;
+  }
+
+  @include vp-319 {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+    margin-bottom: 31px;
+  }
+}
+
+.answers__wrap {
+  display: flex;
+  gap: 40px;
+
+  @include vp-767 {
+    flex-direction: column;
+  }
+
+  @include vp-319 {
+    gap: 28px;
+  }
+}
+
+.answers__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .is-active {
+    background: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+    border: none;
+    color: $color-default-white;
+  }
+
+  @include vp-767 {
+    flex-direction: row;
+  }
+
+  @media (max-width: 550px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.answers__btn {
+  width: 260px;
+  height: 54px;
+  border: 1px solid rgba(16, 38, 84, 0.20);
+  font-size: 18px;
+  font-weight: 500;
+
+  @include hover {
+    border-color: $color-default-sapphire;
+  }
+
+  @include focus {
+    outline: none;
+    border-color: $color-default-sapphire;
+  }
+
+  @media (max-width: 550px) {
+    width: 100%;
+    font-size: 16px;
+    height: 44px;
+  }
+}
+
+.answers__tab {
+  width: 100%;
+}
+
+[data-tabs="parent"] {
+  overflow: hidden;
+
+  &.no-transition {
+    > [data-tabs="control"],
+    > [data-tabs="content"],
+    > [data-tabs="element"] {
+      transition: none;
+    }
+  }
+
+  &.no-transition-global {
+    [data-tabs="control"],
+    [data-tabs="content"],
+    [data-tabs="element"] {
+      transition: none;
+    }
+  }
+}
+
+[data-tabs="parent"] [data-tabs="content"] {
+  position: relative;
+}
+
+[data-tabs="element"] {
+  position: absolute;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
+}
+
+[data-tabs="element"].for-load {
+  position: static;
+  visibility: visible;
+  opacity: 1;
+
+  transition: none;
+}
+
+[data-tabs="element"].is-active {
+  z-index: 1;
+
+  visibility: visible;
+  opacity: 1;
+}
+

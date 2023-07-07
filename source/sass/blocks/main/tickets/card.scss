@@ -5,14 +5,36 @@
 
   @include hover {
     background: linear-gradient(169deg, rgba(209,10,66,1) 0%, rgba(0,53,159,1) 100%);
+
+    .card__button {
+      background: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+      border: none;
+      color: #FFFFFF;
+    }
   }
 
   @include focus {
     outline: none;
     background: linear-gradient(169deg, rgba(209,10,66,1) 0%, rgba(0,53,159,1) 100%);
+
+    .card__button {
+      background: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+      border: none;
+      color: #FFFFFF;
+    }
   }
 
-  @include vp-767 {
+  @include active {
+    background: linear-gradient(169deg, rgba(209,10,66,1) 0%, rgba(0,53,159,1) 100%);
+
+    .card__button {
+      background: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+      border: none;
+      color: #FFFFFF;
+    }
+  }
+
+  @include vp-1023 {
     max-width: 442px;
   }
 
@@ -28,8 +50,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 100%;
 
-  @include vp-767  {
+  @include vp-1023  {
     padding: 7.69vw 14.34vw;
     align-items: center;
   }
@@ -45,8 +68,9 @@
   font-weight: 700;
   line-height: 1;
   margin-bottom: 14px;
+  overflow-wrap: anywhere;
 
-  @include vp-767 {
+  @include vp-1023 {
     font-size: 22px;
   }
 
@@ -63,21 +87,22 @@
   margin-bottom: 84px;
 
   @include vp-319 {
-    margin-bottom: 70px;
+    margin-bottom: 65px;
   }
 }
 
 .card__price {
   display: block;
   color: $color-egyptian-blue;
-  font-size: 4vw;
+  font-size: 60px;
   font-family: $ff-roboto;
   font-weight: 700;
   line-height: 1;
   text-align: center;
   position: relative;
   z-index: 0;
-  margin-bottom: 53px;
+  margin-bottom: 46px;
+  overflow-wrap: anywhere;
 
   svg {
     width: 2.20vw;
@@ -97,13 +122,13 @@
     width: 25vw; top: -3.44vw;
   }
 
-  @include vp-767 {
-    font-size: 3.5rem;
+  @include vp-1023 {
+    font-size: 3.7rem;
     white-space: nowrap;
     margin-bottom: 49px;
 
     &::before {
-      width: 130%;
+      width: 31vw;
       top: -46px;
     }
 
@@ -114,7 +139,7 @@
   }
 
   @include vp-319 {
-    font-size: 2.7rem;
+    font-size: 3rem;
     margin-bottom: 44px;
 
     &::before {
@@ -148,14 +173,21 @@
 
 .card__button {
   text-transform: uppercase;
-  width: 15.08vw;
+  width: 15.2vw;
   height: 4.69vw;
   font-size: 0.62rem;
   border: 2px solid #102654;
   font-weight: 700;
   letter-spacing: 0.6px;
 
-  @include vp-767 {
+  @include focus {
+    outline: none;
+    background: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+    border: none;
+    color: #FFFFFF;
+  }
+
+  @include vp-1023 {
     width: 206px;
     height: 64px;
   }
