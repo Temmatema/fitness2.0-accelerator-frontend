@@ -1,45 +1,39 @@
-.reviews {
-  .container {
-    padding-top: 123px;
-    padding-bottom: 120px;
-  }
+.reviews .swiper-wrapper {
+  display: flex;
+}
 
-  .reviews__swiper {
-    width: 560px;
-    min-height: 242px;
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    padding: 0;
-    z-index: 1;
-  }
-
-  .swiper-wrapper {
-    display: flex;
-  }
+.reviews .reviews__swiper {
+  width: 560px;
+  min-height: 242px;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
 
   @include vp-767 {
-    .container {
-      padding-top: 77px;
-      padding-bottom: 100px;
-    }
-
-    .reviews__swiper {
-      margin: 0 10px;
-    }
+    margin: 0 10px;
   }
 
   @media (max-width: 550px) {
-    .reviews__swiper {
-      width: 227px;
-      height: 336px;
-      margin: 0;
-    }
+    width: 227px;
+    height: 336px;
+    margin: 0;
+  }
+}
 
-    .container {
-      padding-top: 66px;
-      padding-bottom: 69px;
-    }
+.reviews .container {
+  padding-top: 123px;
+  padding-bottom: 120px;
+
+  @include vp-767 {
+    padding-top: 77px;
+    padding-bottom: 100px;
+  }
+
+  @media (max-width: 550px) {
+    padding-top: 66px;
+    padding-bottom: 69px;
   }
 }
 
@@ -65,7 +59,7 @@
 
 .reviews__slide {
   width: 560px;
-  background-color: #1C3374;
+  background-color: #1c3374;
   display: grid;
   grid-template-columns: 80px auto;
   row-gap: 18px;
@@ -77,10 +71,6 @@
     color: $color-default-white;
   }
 
-  img {
-    grid-row: 1/3;
-  }
-
   @media (max-width: 550px) {
     grid-template-columns: 68px 77px;
     padding: 40px 25px;
@@ -88,13 +78,17 @@
     column-gap: 15px;
     align-items: center;
     justify-content: space-between;
+  }
+}
 
-    img {
-      width: 68px;
-      height: 68px;
-      grid-row: 1/2;
-      margin-left: 5.33vw;
-    }
+.reviews__slide img {
+  grid-row: 1/3;
+
+  @media (max-width: 550px) {
+    width: 68px;
+    height: 68px;
+    grid-row: 1/2;
+    margin-left: 5.33vw;
   }
 }
 
@@ -123,20 +117,19 @@
 .reviews__content {
   position: relative;
   display: flex;
+  align-items: flex-start;
 }
 
 .reviews__btn {
   @include hover {
-    svg {
-      path {
-        stroke: $color-default-sapphire;
-      }
+    path {
+      stroke: $color-default-sapphire;
     }
   }
 }
 
 .reviews__prev-btn {
-  left: 223px;
+  align-self: center;
   margin-left: auto;
   margin-right: 20px;
 
@@ -152,8 +145,8 @@
 }
 
 .reviews__next-btn {
+  align-self: center;
   transform: rotateZ(180deg);
-  right: 223px;
   margin-right: auto;
   margin-left: 20px;
 

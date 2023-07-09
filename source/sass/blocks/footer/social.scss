@@ -11,37 +11,31 @@
 .social__link {
   display: flex;
 
+  svg {
+    fill: #ffffff;
+    color: #030a1a;
+  }
+
   @include hover {
     svg {
-      .social-link-1 {
-        fill: $color-egyptian-blue;
-      }
-      .social-link-2 {
-        fill: #FFFFFF;
-      }
+      fill: $color-egyptian-blue;
+      color: #ffffff;
     }
   }
 
   @include focus {
     outline: none;
+
     svg {
-      .social-link-1 {
-        fill: $color-egyptian-blue;
-      }
-      .social-link-2 {
-        fill: #FFFFFF;
-      }
+      fill: $color-egyptian-blue;
+      color: #ffffff;
     }
   }
 
   @include active {
     svg {
-      .social-link-1 {
-        fill: $color-default-sapphire;
-      }
-      .social-link-2 {
-        fill: #FFFFFF;
-      }
+      fill: $color-default-sapphire;
+      color: #ffffff;
     }
   }
 }

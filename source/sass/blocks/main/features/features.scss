@@ -1,30 +1,25 @@
 .features {
-  background-color: #F8F9FC;
-  span {
-    font-family: $ff-roboto;
-  }
-  h3 {
-    font-family: $ff-roboto;
-  }
+  background-color: #f8f9fc;
+}
 
-  .container {
-    padding-top: 9.67vw;
-    padding-bottom: 90px;
-  }
+.features .container {
+  padding-top: 9.67vw;
+  padding-bottom: 90px;
 
   @include vp-767 {
-    .container {
-      padding-top: 13.97vw;
-      padding-bottom: 95px;
-    }
+    padding-top: 13.97vw;
+    padding-bottom: 95px;
   }
 
   @include vp-319 {
-    .container {
-      padding-top: 70px;
-      padding-bottom: 32px
-    }
+    padding-top: 70px;
+    padding-bottom: 32px;
   }
+}
+
+.features span,
+h3 {
+  font-family: $ff-roboto;
 }
 
 .features__title {
@@ -60,7 +55,7 @@
   grid-template-rows: 1fr 1fr;
   padding-left: 5.86vw;
   padding-right: 5.13vw;
-  column-gap: 4.40vw;
+  column-gap: 4.4vw;
   position: relative;
 
   @include vp-1365 {

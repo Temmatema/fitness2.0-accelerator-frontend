@@ -9,6 +9,7 @@
 
   @include vp-319 {
     padding-bottom: 48px;
+
     .container {
       padding-top: 26px;
     }
@@ -59,6 +60,7 @@
 
   @include focus {
     outline: none;
+
     img {
       opacity: 0.3;
     }
@@ -80,6 +82,7 @@
 
   @include vp-319 {
     height: 274px;
+
     img {
       height: 274px;
     }
@@ -102,6 +105,7 @@
   }
 }
 
+
 .coaches__inner-info {
   position: absolute;
   left: 0;
@@ -115,14 +119,8 @@
   padding: 57px 49px 31px 47px;
   z-index: -1;
 
-  @include vp-319 {
-    padding: 50px 31px 10px 30px;
-  }
-}
-
-.coaches__inner-info {
   span {
-    color: #B6BDCC;
+    color: #b6bdcc;
     font-size: 1rem;
     font-family: $ff-roboto;
     font-weight: 400;
@@ -147,16 +145,6 @@
     line-height: 20px;
     padding-left: 22px;
     position: relative;
-
-    &::before {
-      position: absolute;
-      content: '';
-      width: 6px;
-      height: 6px;
-      background-color: #FFFFFF;
-      border-radius: 50%;
-      left: 6px; top: 5px;
-    }
   }
 
   @include vp-767 {
@@ -165,15 +153,29 @@
     }
   }
 
-  @include  vp-319 {
+  @include vp-319 {
+    padding: 50px 31px 10px 30px;
+
     ul {
       gap: 16px;
     }
+
     li {
       font-size: 12px;
       line-height: 150%;
     }
   }
+}
+
+.coaches__inner-info li::before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  left: 6px;
+  top: 5px;
 }
 
 .inner-name {

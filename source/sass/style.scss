@@ -19,10 +19,6 @@
 // ---------------------------------
 
 @import "blocks/btn";
-@import "blocks/modal";
-@import "blocks/custom-input";
-@import "blocks/custom-toggle";
-@import "blocks/custom-select";
 @import "blocks/header/header";
 @import "blocks/main/workout";
 @import "blocks/main/tickets/tickets";
@@ -34,8 +30,8 @@
 @import "blocks/main/features/col";
 @import "blocks/main/promotions/promotion";
 @import "blocks/main/promotions/sidebar";
-@import "blocks/main/Q&A/answers";
-@import "blocks/main/Q&A/accordion";
+@import "blocks/main/questions-answers/answers";
+@import "blocks/main/questions-answers/accordion";
 @import "blocks/main/reviews";
 @import "blocks/main/main-footer/main-footer";
 @import "blocks/main/main-footer/free";

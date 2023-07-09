@@ -184,37 +184,39 @@ export class Tabs {
     const activeControl = this._returnScopeChild(parentElement.querySelectorAll('[data-tabs="control"].is-active'), parentElement);
     const activeElement = this._returnScopeChild(parentElement.querySelectorAll('[data-tabs="element"].is-active'), parentElement);
     const currentHeight = contentElement.offsetHeight;
-    const newHeight = tabElements[currentIndex].offsetHeight;
+    if (tabElements[currentIndex]) {
+      const newHeight = tabElements[currentIndex].offsetHeight;
 
-    parentElement.classList.add('no-action');
-    document.activeElement.blur();
+      parentElement.classList.add('no-action');
+      document.activeElement.blur();
 
-    if (activeControl) {
-      activeControl.classList.remove('is-active');
-    }
+      if (activeControl) {
+        activeControl.classList.remove('is-active');
+      }
 
-    if (activeElement) {
-      activeElement.classList.remove('is-active');
-    }
+      if (activeElement) {
+        activeElement.classList.remove('is-active');
+      }
 
-    if (currentHeight > newHeight) {
-      setTimeout(() => {
+      if (currentHeight > newHeight) {
+        setTimeout(() => {
+          if (dataHeight !== 'max' && dataHeight !== 'unset') {
+            contentElement.style.height = newHeight + 'px';
+          }
+          control.classList.add('is-active');
+          tabElements[currentIndex].classList.add('is-active');
+          parentElement.classList.remove('no-action');
+        }, dataDelay);
+      } else {
         if (dataHeight !== 'max' && dataHeight !== 'unset') {
           contentElement.style.height = newHeight + 'px';
         }
-        control.classList.add('is-active');
-        tabElements[currentIndex].classList.add('is-active');
-        parentElement.classList.remove('no-action');
-      }, dataDelay);
-    } else {
-      if (dataHeight !== 'max' && dataHeight !== 'unset') {
-        contentElement.style.height = newHeight + 'px';
+        setTimeout(() => {
+          control.classList.add('is-active');
+          tabElements[currentIndex].classList.add('is-active');
+          parentElement.classList.remove('no-action');
+        }, dataDelay);
       }
-      setTimeout(() => {
-        control.classList.add('is-active');
-        tabElements[currentIndex].classList.add('is-active');
-        parentElement.classList.remove('no-action');
-      }, dataDelay);
     }
   }
 }

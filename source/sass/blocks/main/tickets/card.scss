@@ -4,34 +4,16 @@
   min-height: 31vw;
 
   @include hover {
-    background: linear-gradient(169deg, rgba(209,10,66,1) 0%, rgba(0,53,159,1) 100%);
-
-    .card__button {
-      background: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
-      border: none;
-      color: #FFFFFF;
-    }
+    background: linear-gradient(169deg, rgba(209, 10, 66, 1) 0%, rgba(0, 53, 159, 1) 100%);
   }
 
   @include focus {
     outline: none;
-    background: linear-gradient(169deg, rgba(209,10,66,1) 0%, rgba(0,53,159,1) 100%);
-
-    .card__button {
-      background: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
-      border: none;
-      color: #FFFFFF;
-    }
+    background: linear-gradient(169deg, rgba(209, 10, 66, 1) 0%, rgba(0, 53, 159, 1) 100%);
   }
 
   @include active {
-    background: linear-gradient(169deg, rgba(209,10,66,1) 0%, rgba(0,53,159,1) 100%);
-
-    .card__button {
-      background: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
-      border: none;
-      color: #FFFFFF;
-    }
+    background: linear-gradient(169deg, rgba(209, 10, 66, 1) 0%, rgba(0, 53, 159, 1) 100%);
   }
 
   @include vp-1023 {
@@ -40,6 +22,26 @@
 
   @include vp-319 {
     max-width: 90.91vw;
+  }
+}
+
+.card .card__button {
+  @include hover {
+    background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    border: none;
+    color: #ffffff;
+  }
+
+  @include focus {
+    background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    border: none;
+    color: #ffffff;
+  }
+
+  @include active {
+    background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    border: none;
+    color: #ffffff;
   }
 }
 
@@ -52,7 +54,7 @@
   justify-content: center;
   height: 100%;
 
-  @include vp-1023  {
+  @include vp-1023 {
     padding: 7.69vw 14.34vw;
     align-items: center;
   }
@@ -104,70 +106,54 @@
   margin-bottom: 46px;
   overflow-wrap: anywhere;
 
-  svg {
-    width: 2.20vw;
-    height: 3.07vw;
-  }
-
-  &::before {
-    position: absolute;
-    color: #E8E8E8;
-    font-size: 170%;
-    font-family: $ff-roboto;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1;
-    z-index: -1;
-    left: -5.05vw;
-    width: 25vw; top: -3.44vw;
-  }
-
   @include vp-1023 {
     font-size: 3.7rem;
     white-space: nowrap;
     margin-bottom: 49px;
-
-    &::before {
-      width: 31vw;
-      top: -46px;
-    }
-
-    svg {
-      width: 30px;
-      height: 42px;
-    }
   }
 
   @include vp-319 {
     font-size: 3rem;
     margin-bottom: 44px;
-
-    &::before {
-      top: -35px;
-    }
-
-    svg {
-      width: 24px;
-      height: 33px;
-    }
   }
 }
 
-.card--coach {
-  &::before {
-    content: attr(data-price);
+.card__price svg {
+  width: 2.2vw;
+  height: 3.07vw;
+
+  @include vp-1023 {
+    width: 30px;
+    height: 42px;
+  }
+
+  @include vp-319 {
+    width: 24px;
+    height: 33px;
   }
 }
 
-.card--day {
-  &::before {
-    content: attr(data-price);
-  }
-}
+.card__price::before {
+  content: attr(data-price);
+  position: absolute;
+  color: #e8e8e8;
+  font-size: 170%;
+  font-family: $ff-roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+  z-index: -1;
+  left: -5.05vw;
+  width: 25vw;
+  top: -3.44vw;
 
-.card--full-day {
-  &::before {
-    content: attr(data-price);
+  @include vp-1023 {
+    width: 31vw;
+    top: -46px;
+  }
+
+  @include vp-319 {
+    top: -35px;
   }
 }
 
@@ -182,9 +168,9 @@
 
   @include focus {
     outline: none;
-    background: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+    background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
     border: none;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   @include vp-1023 {

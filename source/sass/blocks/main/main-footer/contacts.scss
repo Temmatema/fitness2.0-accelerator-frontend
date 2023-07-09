@@ -1,6 +1,6 @@
 .contacts {
   flex: 1;
-  border-top: 1px solid #74819C;
+  border-top: 1px solid #74819c;
 }
 
 .contacts__title {
@@ -13,7 +13,7 @@
   @include vp-767 {
     letter-spacing: 1px;
     font-size: 42px;
-    margin-bottom: 37px ;
+    margin-bottom: 37px;
   }
 
   @media (max-width: 550px) {
@@ -23,7 +23,7 @@
 }
 
 .contacts__wrap {
-  padding: 4.40vw 11.65vw 4.40vw 8.79vw;
+  padding: 4.4vw 11.65vw 4.4vw 8.79vw;
 
   @media (max-width: 1120px) {
     padding: 70px 21.25vw 70px 17.34vw;
@@ -47,58 +47,58 @@
   column-gap: 8.35vw;
   position: relative;
 
-  &::before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 1px;
-    background-color: #74819C;
-    left: 64px;
-    right: 0;
-    margin: 0 auto;
-  }
-
-  h3 {
-    font-family: $ff-roboto;
-    font-size: 0.86rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 150%;
-    margin-bottom: 2px;
-  }
-
-  p {
-    font-size: 0.83rem;
-    font-style: normal;
-    font-weight: 400;
-  }
-
   @include vp-767 {
     padding-left: 0;
     row-gap: 23px;
     column-gap: 9.13vw;
-
-    &::before {
-      left: 8.21vw;
-    }
-
-    h3 {
-      font-size: 1.1rem;
-      margin-bottom: 8px;
-    }
-
-    p {
-      font-size: 1.04rem;
-    }
   }
 
   @media (max-width: 550px) {
     display: flex;
     flex-direction: column;
+  }
+}
 
-    &::before {
-      content: none;
-    }
+.contacts__grid::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background-color: #74819c;
+  left: 64px;
+  right: 0;
+  margin: 0 auto;
+
+  @include vp-767 {
+    left: 8.21vw;
+  }
+
+  @media (max-width: 550px) {
+    content: none;
+  }
+}
+
+.contacts__grid h3 {
+  font-family: $ff-roboto;
+  font-size: 0.86rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 2px;
+
+  @include vp-767 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+}
+
+.contacts__grid p {
+  font-size: 0.83rem;
+  font-style: normal;
+  font-weight: 400;
+
+  @include vp-767 {
+    font-size: 1.04rem;
   }
 }
 

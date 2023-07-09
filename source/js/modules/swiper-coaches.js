@@ -1,3 +1,6 @@
+import Swiper from '../vendor/swiper.js';
+
+// eslint-disable-next-line no-unused-vars
 const swiper = new Swiper('.swiper', {
   speed: 400,
   direction: 'horizontal',
@@ -26,4 +29,3 @@ const swiper = new Swiper('.swiper', {
     },
   },
 });
-
