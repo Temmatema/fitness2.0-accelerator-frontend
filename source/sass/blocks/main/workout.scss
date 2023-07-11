@@ -5,19 +5,15 @@
   padding-bottom: 120px;
   gap: 20px;
 
-  @include vp-1023 {
-    grid-template-columns: 29.13vw 52.93vw;
-    justify-content: space-between;
-  }
-
-  @include vp-767 {
+  @include vp-1199 {
     display: flex;
     flex-direction: column;
     padding-top: 101px;
     padding-bottom: 100px;
+    align-items: center;
   }
 
-  @include vp-319 {
+  @include vp-767 {
     padding-top: 66px;
     gap: 0;
     padding-bottom: 69px;
@@ -28,16 +24,12 @@
   margin-left: 60px;
   padding-top: 41px;
 
-  @include vp-1023 {
-    margin-left: 0;
-  }
-
-  @include vp-767 {
+  @include vp-1199 {
     margin-left: 0;
     padding-top: 0;
   }
 
-  @include vp-319 {
+  @include vp-767 {
     margin-bottom: 15px;
   }
 }
@@ -49,7 +41,7 @@
   letter-spacing: 1.44px;
   margin-bottom: 11px;
 
-  @include vp-767 {
+  @include vp-1199 {
     font-size: 42px;
     letter-spacing: 1.26px;
     padding-right: 14px;
@@ -57,7 +49,7 @@
     margin-bottom: 2px;
   }
 
-  @include vp-319 {
+  @include vp-767 {
     font-size: 9.9vw;
     padding: 0;
     text-align: left;
@@ -71,13 +63,13 @@
   line-height: 150%;
   margin-bottom: 40px;
 
-  @include vp-767 {
+  @include vp-1199 {
     text-align: center;
     margin-bottom: 35px;
     font-size: 18px;
   }
 
-  @include vp-319 {
+  @include vp-767 {
     text-align: left;
     padding: 0;
     margin-bottom: 25px;
@@ -89,14 +81,14 @@
   font-weight: 400;
   line-height: 24px;
 
-  @include vp-767 {
+  @include vp-1199 {
     text-align: center;
     padding: 0 7vw;
     margin-bottom: 22px;
     font-size: 0.91rem;
   }
 
-  @include vp-319 {
+  @include vp-767 {
     text-align: left;
     padding: 0 8vw 0 0;
     margin-bottom: 17px;
@@ -106,7 +98,7 @@
 .workout__text:last-child {
   margin-top: 7px;
 
-  @include vp-767 {
+  @include vp-1199 {
     display: none;
   }
 }
@@ -119,7 +111,7 @@
     margin-left: 64px;
   }
 
-  @include vp-767 {
+  @include vp-1199 {
     picture {
       margin-left: 0;
     }
@@ -128,7 +120,6 @@
   @include vp-319 {
     picture {
       width: 100vw;
-      margin-left: -15px;
       margin-bottom: 40px;
     }
   }
@@ -140,7 +131,7 @@
   height: 228px;
   margin-top: -8.19vw;
 
-  @include vp-767 {
+  @include vp-1199 {
     margin: -10.82vw auto 0 auto;
     max-width: 266px;
     height: 167px;
@@ -149,7 +140,7 @@
   @include vp-319 {
     width: 100vw;
     max-width: none;
-    margin: 0 0 0 -15px;
+    margin: 0;
   }
 }
 
@@ -158,7 +149,7 @@
   height: inherit;
   border: none;
 
-  @include vp-767 {
+  @include vp-1199 {
     max-width: 265px;
   }
 
@@ -188,7 +179,7 @@
     background: rgba(20, 54, 122, 0.5);
   }
 
-  @include vp-767 {
+  @include vp-1199 {
     &::after {
       background-image: url("../img/main/preview-tablet.jpg");
     }
@@ -265,7 +256,7 @@
     }
   }
 
-  @include vp-767 {
+  @include vp-1199 {
     transform: scale(0.7);
   }
 }

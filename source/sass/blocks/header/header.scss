@@ -19,10 +19,10 @@
     min-height: 658px;
   }
 
-  @include vp-767 {
+  @include vp-1199 {
     min-height: 554px;
     background-image: url("../img/header-background-tablet.png");
-    background-size: auto;
+    background-size: cover;
   }
 
   @include vp-319 {
@@ -35,7 +35,7 @@
   display: flex;
   justify-content: space-between;
 
-  @include vp-767 {
+  @include vp-1199 {
     padding-top: 40px;
   }
 
@@ -50,7 +50,7 @@
   text-transform: uppercase;
   line-height: 40px;
 
-  @include vp-767 {
+  @include vp-1199 {
     font-size: 24px;
     letter-spacing: 0.6px;
     line-height: 20px;
@@ -69,7 +69,7 @@
   line-height: 32px;
   z-index: 1;
 
-  @include vp-767 {
+  @include vp-1199 {
     font-size: 24px;
     letter-spacing: 0.4px;
     line-height: 20px;
@@ -96,13 +96,14 @@
   }
 
   @include vp-1365 {
-    justify-content: initial;
+    justify-content: flex-start;
   }
 
-  @include vp-767 {
-    grid-template-columns: 113px 211px auto;
+  @include vp-1199 {
+    grid-template-columns: 113px 211px 353px;
     padding-left: 0;
     min-height: 410px;
+    justify-content: center;
 
     picture {
       margin-top: 23px;
@@ -110,9 +111,10 @@
     }
   }
 
-  @include vp-620 {
+  @include vp-767 {
     grid-template-columns: 113px 175px;
     justify-content: space-evenly;
+    position: relative;
 
     picture {
       display: none;
@@ -125,7 +127,6 @@
 }
 
 .header__content-wrap {
-  position: relative;
   height: 100%;
   padding-top: 98px;
   gap: 27px;
@@ -133,12 +134,12 @@
   flex-direction: column;
   align-items: flex-end;
 
-  @include vp-767 {
+  @include vp-1199 {
     padding-top: 75px;
     gap: 16px;
   }
 
-  @include vp-319 {
+  @include vp-767 {
     padding-top: 70px;
     gap: 23px;
   }
@@ -151,7 +152,7 @@
   text-align: right;
   padding-top: 5.63vw;
 
-  @include vp-767 {
+  @include vp-1199 {
     padding-top: 67px;
   }
 
@@ -171,7 +172,7 @@
   padding-right: 51px;
   overflow-wrap: anywhere;
 
-  @include vp-767 {
+  @include vp-1199 {
     font-size: 34px;
     padding-right: 2px;
   }
@@ -196,7 +197,7 @@
     padding-top: 15px;
   }
 
-  @include vp-767 {
+  @include vp-1199 {
     font-size: 4.7rem;
     letter-spacing: 1.4px;
     text-transform: none;
@@ -223,7 +224,7 @@
   margin-top: 30px;
   margin-bottom: 20px;
 
-  @include vp-767 {
+  @include vp-1199 {
     font-size: 0.63rem;
     letter-spacing: 0.4px;
     width: 185px;
@@ -232,9 +233,18 @@
     min-height: 61px;
   }
 
+  @include vp-767 {
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
   @include vp-319 {
-    margin-top: 7px;
-    width: 89.97vw;
+    bottom: 38px;
+    width: 100%;
   }
 
   @include focus {

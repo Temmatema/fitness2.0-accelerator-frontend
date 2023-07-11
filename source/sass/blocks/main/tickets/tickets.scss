@@ -9,12 +9,12 @@
   position: relative;
   z-index: 1;
 
-  @include vp-767 {
-    padding-top: 100px;
+  @include vp-1199 {
+    padding-top: 102px;
   }
 
   @include vp-319 {
-    padding-top: 68px;
+    padding-top: 65px;
     padding-bottom: 70px;
   }
 }
@@ -26,7 +26,7 @@
   line-height: normal;
   letter-spacing: 1.62px;
 
-  @include vp-767 {
+  @include vp-1199 {
     font-size: 42px;
     letter-spacing: 1.26px;
     padding-right: 12px;
@@ -45,13 +45,13 @@
   width: 21.03vw;
   height: 36.19vw;
 
-  @include vp-767 {
-    bottom: -20.6vw;
-    width: 44.98vw;
+  @include vp-1199 {
+    width: auto;
     height: auto;
+    bottom: -159px;
   }
 
-  @include vp-319 {
+  @include vp-767 {
     display: none;
   }
 }
@@ -61,7 +61,7 @@
   justify-content: center;
   margin-bottom: 36px;
 
-  @include vp-767 {
+  @include vp-1199 {
     margin-bottom: 43px;
   }
 
@@ -87,7 +87,7 @@
     opacity: 0.3;
   }
 
-  @include vp-767 {
+  @include vp-1199 {
     gap: 7.17vw;
   }
 
@@ -106,7 +106,7 @@
   border-bottom: 2px transparent solid;
   transition: border-bottom-color 0.3s ease;
 
-  @include vp-767 {
+  @include vp-1199 {
     font-size: 0.96rem;
     padding-top: 28px;
   }
@@ -143,11 +143,11 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2.93vw;
 
-  @include vp-1023 {
+  @include vp-1199 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 39px;
+    gap: 41px;
   }
 
   @include vp-319 {
