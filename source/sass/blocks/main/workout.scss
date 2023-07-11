@@ -215,6 +215,7 @@
   @include hover {
     .play-circle-1 {
       stroke-opacity: 1;
+      stroke: $color-default-sapphire;
     }
 
     .play-circle-2 {
