@@ -17,7 +17,7 @@
   }
 }
 
-.promotion__title {
+.promotion h2 {
   font-size: 54px;
   font-weight: 600;
   line-height: normal;
@@ -93,10 +93,14 @@
   margin-bottom: 6px;
 }
 
-.promotion__inner-block .promotion__fix-price {
+.promotion__inner-block b {
   font-size: 70px;
   font-weight: 700;
   margin-bottom: 18px;
+  font-family: $ff-roboto;
+  display: block;
+  line-height: 1;
+  color: $color-default-white;
 
   @include vp-1199 {
     font-size: 9.13vw;

@@ -34,7 +34,7 @@
   }
 }
 
-.workout__title {
+.workout__desc-block h2 {
   font-size: 3.54vw;
   font-weight: 600;
   line-height: normal;
@@ -57,7 +57,7 @@
   }
 }
 
-.workout__caption {
+.workout__desc-block h2 + p {
   font-size: 1.12rem;
   font-weight: 500;
   line-height: 150%;
@@ -76,7 +76,7 @@
   }
 }
 
-.workout__text {
+.workout__text-wrap p {
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 24px;
@@ -95,7 +95,7 @@
   }
 }
 
-.workout__text:last-child {
+.workout__text-wrap p:last-child {
   margin-top: 7px;
 
   @include vp-1199 {

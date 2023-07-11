@@ -71,13 +71,14 @@
   }
 }
 
-.card__heading {
+.card__wrap h3 {
   text-align: center;
   font-size: 1.6vw;
   font-weight: 700;
   line-height: 1;
   margin-bottom: 14px;
   overflow-wrap: anywhere;
+  font-family: $ff-roboto;
 
   @include vp-1199 {
     font-size: 22px;
@@ -89,7 +90,7 @@
   }
 }
 
-.card__heading + p {
+.card__wrap p {
   text-align: center;
   color: $color-chambray;
   font-size: 14px;
@@ -100,7 +101,7 @@
   }
 }
 
-.card__price {
+.card__wrap span {
   display: block;
   white-space: nowrap;
   color: $color-egyptian-blue;
@@ -126,7 +127,7 @@
   }
 }
 
-.card__price svg {
+.card__wrap span svg {
   width: 2.2vw;
   height: 3.07vw;
 
@@ -141,7 +142,7 @@
   }
 }
 
-.card__price::before {
+.card__wrap span::before {
   content: attr(data-price);
   position: absolute;
   color: #e8e8e8;

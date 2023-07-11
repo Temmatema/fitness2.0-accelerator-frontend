@@ -5,10 +5,34 @@
 
 .free button {
   color: $color-default-white;
+  width: 100%;
+  height: 55px;
+  border: 3px solid #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
 }
 
 .free h2 {
   color: $color-default-white;
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 1.62px;
+  margin-bottom: 27px;
+
+  @include vp-1199 {
+    font-size: 42px;
+    letter-spacing: 1px;
+    margin-bottom: 33px;
+  }
+
+  @include vp-767 {
+    font-size: 1.92rem;
+    margin-bottom: 34px;
+  }
 }
 
 .free input {
@@ -66,25 +90,6 @@
   }
 }
 
-.free__title {
-  font-size: 54px;
-  font-weight: 800;
-  line-height: 1;
-  letter-spacing: 1.62px;
-  margin-bottom: 27px;
-
-  @include vp-1199 {
-    font-size: 42px;
-    letter-spacing: 1px;
-    margin-bottom: 33px;
-  }
-
-  @include vp-767 {
-    font-size: 1.92rem;
-    margin-bottom: 34px;
-  }
-}
-
 .free__fields {
   display: flex;
   gap: 30px;
@@ -125,15 +130,4 @@
     bottom: -20px;
     white-space: nowrap;
   }
-}
-
-.free__btn {
-  width: 100%;
-  height: 55px;
-  border: 3px solid #ffffff;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.7px;
-  text-transform: uppercase;
 }

@@ -44,7 +44,7 @@
   }
 }
 
-.header__heading {
+.header__top h2 {
   font-size: 36px;
   letter-spacing: 0.72px;
   text-transform: uppercase;
@@ -63,7 +63,7 @@
   }
 }
 
-.header__phone {
+.header__top a {
   font-size: 26px;
   letter-spacing: 0.78px;
   line-height: 32px;
@@ -145,7 +145,7 @@
   }
 }
 
-.header__desc {
+.header__content p {
   font-size: 0.77rem;
   line-height: 20px;
   font-weight: 300;
@@ -162,7 +162,7 @@
   }
 }
 
-.header__subtitle {
+.header__content-wrap h2 {
   font-size: 3.4vw;
   font-weight: 600;
   letter-spacing: 1.44px;
@@ -183,7 +183,7 @@
   }
 }
 
-.header__title {
+.header__content-wrap h1 {
   font-size: 6.9vw;
   font-weight: 800;
   letter-spacing: 3.9px;
