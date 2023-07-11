@@ -1,5 +1,5 @@
 const buttons = document.querySelectorAll('.tickets__button');
-const cardsPrice = document.querySelectorAll('.card__price');
+const cardsPrice = document.querySelectorAll('.tickets__cards span');
 const ACTIVE_CLASS = 'tickets-active';
 const prices = [5000, 1700, 2700];
 buttons.forEach((btn, index) => btn.addEventListener('click', () => swapCards(btn, index)));
