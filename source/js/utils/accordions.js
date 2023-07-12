@@ -42,16 +42,6 @@ export class Accordions {
     this.updateAccordionsHeight();
   }
 
-  closeAllAccordion(parent) {
-    const elements = parent.querySelectorAll('[data-accordion="element"]');
-    elements.forEach((element) => {
-      const currentParent = element.closest('[data-accordion="parent"]');
-      if (currentParent === parent) {
-        this.closeAccordion(element);
-      }
-    });
-  }
-
   updateAccordionsHeight(element = null) {
     if (element) {
       const content = element.querySelector('[data-accordion="content"]');
@@ -112,10 +102,6 @@ export class Accordions {
     const parentElement = element.closest('[data-accordion="parent"]');
     const contentElement = element.querySelector('[data-accordion="content"]');
     this._openHeight += contentElement.scrollHeight;
-
-    if (parentElement.hasAttribute('data-single')) {
-      this.closeAllAccordion(parentElement);
-    }
 
     element.classList.add('is-active');
     if (transition) {
