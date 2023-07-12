@@ -243,7 +243,7 @@
     }
   }
 
-  @include active {
+  &:active {
     .play-circle-1 {
       stroke-opacity: 1;
     }
@@ -273,7 +273,7 @@
     stop-color: #102654;
   }
 
-  @include active {
+  &:active {
     stop-color: #102654;
   }
 }

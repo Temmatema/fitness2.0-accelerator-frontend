@@ -127,7 +127,7 @@
     opacity: 1;
   }
 
-  @include active {
+  &:active {
     opacity: 1;
     border-color: #d10a42;
   }

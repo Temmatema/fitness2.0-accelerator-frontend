@@ -32,7 +32,7 @@
     }
   }
 
-  @include active {
+  &:active {
     svg {
       fill: $color-default-sapphire;
       color: #ffffff;

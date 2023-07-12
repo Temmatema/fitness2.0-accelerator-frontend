@@ -258,7 +258,7 @@
     color: $color-egyptian-blue;
   }
 
-  @include active {
+  &:active {
     background-color: $color-default-white;
     color: $color-egyptian-blue;
   }

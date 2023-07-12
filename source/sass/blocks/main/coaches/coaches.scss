@@ -70,9 +70,9 @@
     }
   }
 
-  @include active {
-    img {
-      opacity: 0.3;
+  &:active {
+    .coaches__inner-info {
+      z-index: 1;
     }
 
     .coaches__name {
