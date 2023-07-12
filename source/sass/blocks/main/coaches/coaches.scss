@@ -48,7 +48,7 @@
     width: 100%;
   }
 
-  @include hover {
+  &:hover {
     .coaches__inner-info {
       z-index: 1;
     }
