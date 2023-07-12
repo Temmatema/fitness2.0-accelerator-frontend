@@ -3,7 +3,7 @@
   padding: 7px;
   min-height: 31vw;
 
-  @include hover {
+  &:hover {
     background: linear-gradient(169deg, rgba(209, 10, 66, 1) 0%, rgba(0, 53, 159, 1) 100%);
 
     .card__button {
