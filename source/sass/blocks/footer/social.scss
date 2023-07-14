@@ -1,6 +1,7 @@
 .social {
   display: flex;
   gap: 11px;
+  flex-wrap: wrap;
 }
 
 .social__item {
@@ -16,7 +17,7 @@
     color: #030a1a;
   }
 
-  @include hover {
+  &:hover {
     svg {
       fill: $color-egyptian-blue;
       color: #ffffff;

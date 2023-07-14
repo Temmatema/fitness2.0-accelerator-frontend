@@ -1,7 +1,8 @@
 .coaches {
-  padding-bottom: 90px;
+  padding-bottom: 108px;
 
   @include vp-1199 {
+    padding-bottom: 104px;
     .container {
       padding-top: 33px;
     }
@@ -23,7 +24,6 @@
 .coaches__title {
   font-size: 54px;
   font-weight: 600;
-  padding-left: 4px;
   line-height: 68px;
   margin-bottom: 46px;
   letter-spacing: 1.62px;
@@ -31,7 +31,6 @@
   @include vp-1199 {
     font-size: 42px;
     text-align: center;
-    padding-left: 0;
     margin-bottom: 23px;
   }
 
@@ -92,7 +91,7 @@
 .coaches__name {
   position: absolute;
   left: 0;
-  bottom: 18px;
+  bottom: 19px;
   font-size: 0.95rem;
   letter-spacing: 0.2px;
   font-weight: 700;
@@ -154,15 +153,15 @@
   }
 
   @include vp-767 {
-    padding: 50px 31px 10px 30px;
+    padding: 48px 31px 10px 30px;
 
     ul {
       gap: 16px;
     }
 
     li {
-      font-size: 12px;
-      line-height: 150%;
+      font-size: 0.78rem;
+      line-height: 19px;
     }
   }
 }

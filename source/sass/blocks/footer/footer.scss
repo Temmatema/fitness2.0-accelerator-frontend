@@ -9,29 +9,15 @@
     justify-content: space-between;
   }
 
-  h2,
   a {
     color: $color-default-white;
   }
 
-  h2 {
-    font-size: 26px;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 0.52px;
-    text-transform: uppercase;
-    padding-top: 9px;
-  }
 
   @include vp-1199 {
     .container {
-      padding-top: 34px;
+      padding-top: 32px;
       padding-bottom: 37px;
-    }
-
-    h2 {
-      padding-top: 0;
-      font-size: 24px;
     }
   }
 
@@ -39,11 +25,8 @@
     .container {
       align-items: center;
       padding-top: 38px;
+      padding-bottom: 50px;
       gap: 27px;
-    }
-
-    h2 {
-      font-size: 20px;
     }
   }
 
@@ -58,8 +41,9 @@
 .footer__list {
   display: flex;
   align-items: center;
-  width: 59.85vw;
+  width: 817px;
   justify-content: flex-end;
+  flex-wrap: wrap;
 
   @include vp-1199 {
     width: 65vw;
@@ -82,6 +66,25 @@
 
   @include vp-767 {
     grid-column: 1/2;
+  }
+}
+
+.footer__title a {
+  display: block;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.52px;
+  text-transform: uppercase;
+  padding-top: 9px;
+
+  @include vp-1199 {
+    padding-top: 0;
+    font-size: 24px;
+  }
+
+  @include vp-767 {
+    font-size: 20px;
   }
 }
 
@@ -117,7 +120,7 @@
   font-family: $ff-roboto;
   font-weight: 400;
   line-height: normal;
-  padding: 1.68vw 1.47vw 1.47vw;
+  padding: 23px 20px 20px;
 
   span {
     position: relative;
@@ -126,6 +129,12 @@
   @include hover {
     span::before {
       width: 100%;
+    }
+  }
+
+  &:active {
+    span::before {
+      display: none;
     }
   }
 

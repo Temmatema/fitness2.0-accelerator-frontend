@@ -8,21 +8,19 @@
     color: $color-default-white;
   }
 
-  min-height: 758px;
+  min-height: 658px;
   position: relative;
+  padding-bottom: 32px;
   background-image: url("../img/header-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $color-default-sapphire;
 
-  @include vp-1365 {
-    min-height: 658px;
-  }
-
   @include vp-1199 {
     min-height: 554px;
     background-image: url("../img/header-background-tablet.png");
     background-size: cover;
+    padding-bottom: 0;
   }
 
   @include vp-319 {
@@ -33,6 +31,7 @@
 .header__top {
   padding-top: 30px;
   display: flex;
+  gap: 100px;
   justify-content: space-between;
 
   @include vp-1199 {
@@ -44,7 +43,13 @@
   }
 }
 
-.header__top h2 {
+.header__top div {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.header__top > a {
   font-size: 36px;
   letter-spacing: 0.72px;
   text-transform: uppercase;
@@ -63,7 +68,7 @@
   }
 }
 
-.header__top a {
+.header__top div a {
   font-size: 26px;
   letter-spacing: 0.78px;
   line-height: 32px;
@@ -84,23 +89,18 @@
 
 .header__content {
   display: grid;
-  grid-template-columns: 113px 19.35vw auto;
+  grid-template-columns: 113px 264px auto;
   padding-left: 19px;
   align-items: center;
   min-height: 556px;
-  justify-content: center;
 
   picture {
-    margin-left: 4.7vw;
+    margin-left: 63px;
     margin-top: -35px;
   }
 
-  @include vp-1365 {
-    justify-content: flex-start;
-  }
-
   @include vp-1199 {
-    grid-template-columns: 113px 211px 353px;
+    grid-template-columns: 110px 212px 353px;
     padding-left: 0;
     min-height: 410px;
     justify-content: center;
@@ -129,7 +129,7 @@
 .header__content-wrap {
   height: 100%;
   padding-top: 98px;
-  gap: 27px;
+  gap: 28px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -163,7 +163,7 @@
 }
 
 .header__content-wrap h2 {
-  font-size: 3.4vw;
+  font-size: 3rem;
   font-weight: 600;
   letter-spacing: 1.44px;
   line-height: 1;
@@ -184,7 +184,7 @@
 }
 
 .header__content-wrap h1 {
-  font-size: 6.9vw;
+  font-size: 5.9rem;
   font-weight: 800;
   letter-spacing: 3.9px;
   line-height: 1;
@@ -218,7 +218,7 @@
   font-size: 10px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  width: 17vw;
+  width: 233px;
   min-height: 60px;
   border: 4px $color-default-white solid;
   margin-top: 30px;
@@ -260,6 +260,6 @@
 
   &:active {
     background-color: $color-default-white;
-    color: $color-egyptian-blue;
+    color: $color-default-sapphire;
   }
 }

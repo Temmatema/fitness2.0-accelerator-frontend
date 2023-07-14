@@ -32,7 +32,7 @@
   }
 
   @include vp-1199 {
-    width: 559px;
+    width: 567px;
   }
 
   @include vp-767 {
@@ -67,7 +67,7 @@
     }
   }
 
-  @include hover {
+  &:hover {
     outline: 1px $color-default-sapphire solid;
 
     path {
@@ -83,10 +83,12 @@
     }
   }
 
-  @include active {
-    outline: 1px $color-default-sapphire solid;
-
+  &:active {
     background-color: $color-default-sapphire;
+
+    path {
+      stroke: $color-default-white;
+    }
   }
 }
 
@@ -98,7 +100,7 @@
   }
 
   @include vp-1199 {
-    left: -20px;
+    left: -18px;
   }
 
   @include vp-767 {
@@ -116,7 +118,7 @@
   }
 
   @include vp-1199 {
-    right: -20px;
+    right: -18px;
   }
 
   @include vp-767 {

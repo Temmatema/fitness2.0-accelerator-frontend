@@ -4,13 +4,14 @@
 }
 
 .tickets .container {
-  padding-top: 9.01vw;
-  padding-bottom: 8.79vw;
+  padding-top: 122px;
+  padding-bottom: 123px;
   position: relative;
   z-index: 1;
 
   @include vp-1199 {
     padding-top: 102px;
+    padding-bottom: 98px;
   }
 
   @include vp-319 {
@@ -29,7 +30,6 @@
   @include vp-1199 {
     font-size: 42px;
     letter-spacing: 1.26px;
-    padding-right: 12px;
   }
 
   @include vp-319 {
@@ -40,15 +40,15 @@
 .tickets img {
   position: absolute;
   right: 0;
-  bottom: -10.99vw;
+  bottom: -149px;
   z-index: 0;
-  width: 21.03vw;
-  height: 36.19vw;
+  width: 287px;
+  height: auto;
 
   @include vp-1199 {
     width: auto;
     height: auto;
-    bottom: -159px;
+    bottom: -124px;
   }
 
   @include vp-767 {
@@ -107,8 +107,8 @@
   transition: border-bottom-color 0.3s ease;
 
   @include vp-1199 {
-    font-size: 0.96rem;
-    padding-top: 28px;
+    font-size: 0.97rem;
+    padding-top: 27px;
   }
 
   @include vp-319 {

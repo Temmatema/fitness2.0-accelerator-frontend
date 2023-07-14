@@ -1,13 +1,14 @@
 .games {
-  padding-top: 8.79vw;
-  padding-bottom: 7.77vw;
+  padding-top: 121px;
+  padding-bottom: 103px;
 
   @include vp-1199 {
-    padding-top: 133px;
+      padding-top: 100px;
+    padding-bottom: 58px;
   }
 
   @include vp-767 {
-    padding-top: 71px;
+    padding-top: 70px;
   }
 }
 
@@ -28,8 +29,8 @@
 
 .games__content {
   background-color: $color-torch-red;
-  padding: 6.23vw 5.57vw;
-  width: 36.63vw;
+  padding: 84px 75px;
+  width: 500px;
 
   p,
   h2 {
@@ -45,7 +46,7 @@
     display: flex;
     flex-direction: column;
     width: 38.07vw;
-    padding: 6.8vw 4.82vw 6.3vw;
+    padding: 6.8vw 4.82vw 6.4vw;
     justify-content: space-between;
   }
 
@@ -58,25 +59,25 @@
 
   @include vp-319 {
     width: 100%;
-    padding: 15.99vw 11.6vw 15vw;
+    padding: 15.99vw 11.6vw 15.6vw;
   }
 }
 
 .games__head {
   display: flex;
-  margin-bottom: 1.76vw;
+  margin-bottom: 1.6vw;
 
   @include vp-1023 {
     margin: 0 0 3px;
   }
 
-  @include vp-319 {
-    margin-bottom: 7px;
+  @include vp-767 {
+    margin-bottom: 5px;
   }
 }
 
 .games__head h2 {
-  font-size: 6.01vw;
+  font-size: 5.1rem;
   text-transform: uppercase;
   font-style: normal;
   font-weight: 600;
@@ -86,15 +87,20 @@
   padding-left: 15px;
 
   @include vp-1023 {
+    line-height: 45px;
     font-size: 46px;
   }
 }
 
 .games__head:first-child {
-  gap: 4.4vw;
+  gap: 61px;
+
+  @include vp-1199 {
+    gap: 34px;
+  }
 
   @include vp-767 {
-    gap: 34px;
+    gap: 33px;
   }
 }
 
@@ -104,7 +110,7 @@
   gap: 24px;
 
   @include vp-1023 {
-    gap: 9px;
+    gap: 10px;
   }
 }
 
@@ -135,12 +141,12 @@
   padding-top: 3px;
 
   @include vp-1023 {
-    gap: 2px;
+    gap: 4px;
   }
 }
 
 .games__data-wrap span {
-  font-size: 2.93vw;
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 1;
 
@@ -156,44 +162,44 @@
   font-weight: 400;
 
   @include vp-1023 {
-    line-height: 1;
+    line-height: 12px;
     font-size: 0.59rem;
   }
 }
 
 .games__content > p {
   font-weight: 400;
-  font-size: 18px;
-  margin-bottom: 3.3vw;
+  font-size: 1.02rem;
+  margin-bottom: 46px;
   white-space: nowrap;
   padding-left: 3px;
 
   @include vp-1023 {
     white-space: nowrap;
-    font-size: 0.66rem;
+    font-size: 0.69rem;
     padding-left: 8px;
     margin-bottom: 29px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 27px;
   }
 }
 
 .games__content > a {
   width: 100%;
-  height: 4.91vw;
-  border: 0.29vw solid #ffffff;
+  min-height: 68px;
+  border: 3px solid #ffffff;
   color: $color-default-white;
-  font-size: 0.88vw;
+  font-size: 0.6rem;
   letter-spacing: 0.6px;
   text-transform: uppercase;
   transition: opacity 0.3s ease;
 
-  @include vp-1365 {
-    font-size: 0.6rem;
-  }
-
   @include vp-1023 {
     width: 26.34vw;
     margin: 0 auto;
-    height: 40px;
+    min-height: 40px;
     font-size: 0.5rem;
   }
 
@@ -245,6 +251,7 @@
 .games__image img {
   width: inherit;
   height: 100%;
+  object-fit: cover;
 
   @include vp-767 {
     min-width: 255px;

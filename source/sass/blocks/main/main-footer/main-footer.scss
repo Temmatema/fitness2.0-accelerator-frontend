@@ -1,6 +1,8 @@
-.main-footer {
+.main-footer .container {
+  padding: 0;
   display: grid;
   grid-template-columns: 50% 50%;
+  max-width: none;
 
   @include vp-1199 {
     grid-template-columns: 100%;

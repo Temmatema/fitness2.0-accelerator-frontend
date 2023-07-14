@@ -22,12 +22,12 @@
 
   @include vp-767 {
     flex-direction: column;
-    gap: 16px;
+    gap: 14px;
   }
 }
 
+
 .row-1 {
-  margin-bottom: 15px;
   border-bottom: 2px rgba(209, 10, 66, 0.2) solid;
 
 
@@ -38,20 +38,20 @@
 
   @include vp-767 {
     &:first-child {
-      margin-bottom: 34px;
+      margin-bottom: 36px;
     }
   }
 }
 
 .row-2 {
-  margin-top: 65px;
+  margin-top: 80px;
 
   @include vp-1199 {
     margin-top: 0;
   }
 
   @include vp-767 {
-    margin-bottom: 33px;
+    margin-bottom: 38px;
   }
 }
 
@@ -78,15 +78,10 @@
 .col-midl {
   flex-direction: column;
   grid-column: 2/3;
-  grid-row: 1/3;
   background-color: #1c3374;
-  padding: 3.37vw 2.49vw 4.32vw;
+  grid-row: 1/-1;
+  padding: 46px 38px 57px 31px;
   gap: 0;
-  max-height: 22.64vw;
-
-  @include vp-1365 {
-    max-height: 309px;
-  }
 
   @include vp-1199 {
     padding: 33px 135px;
@@ -98,11 +93,11 @@
 
   @include vp-767 {
     width: 100vw;
-    margin-top: 44px;
-    padding: 35px 65px;
+    margin-top: 45px;
+    padding: 38px 67px;
     margin-left: -15px;
     min-height: 239px;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
   }
 }
 
@@ -139,7 +134,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
 }
 
@@ -157,7 +152,7 @@
   gap: 8px;
 
   @include vp-1199 {
-    gap: 3px;
+    gap: 4px;
   }
 
   @include vp-767 {
@@ -171,18 +166,18 @@
   font-weight: 700;
 
   @include vp-1199 {
-    font-size: 1.07rem;
+    font-size: 1.05rem;
   }
 
   @include vp-767 {
     font-size: 17px;
-    margin-bottom: 2px;
   }
 }
 
 .col__right p {
   font-size: 0.89rem;
   font-weight: 300;
+  line-height: 22px;
 
   @include vp-1199 {
     font-size: 0.89rem;
