@@ -13,6 +13,10 @@
   line-height: normal;
   letter-spacing: 0.7px;
   text-transform: uppercase;
+
+  @include vp-1199 {
+    max-width: 474px;
+  }
 }
 
 .free h2 {
@@ -26,7 +30,7 @@
   @include vp-1199 {
     font-size: 42px;
     letter-spacing: 1px;
-    margin-bottom: 33px;
+    margin-bottom: 31px;
   }
 
   @include vp-767 {
@@ -60,7 +64,7 @@
   }
 
   @include vp-1199 {
-    width: 26.73vw;
+    width: 206px;
   }
 
   @include vp-767 {
@@ -84,7 +88,9 @@
   padding: 71px 170px 69px 102px;
 
   @include vp-1199 {
-    padding: 66px 21.25vw 67px 17.34vw;
+    margin-left: 0;
+    max-width: 100%;
+    padding: 66px 162px 69px 132px;
   }
 
   @include vp-767 {
@@ -106,8 +112,7 @@
   margin-bottom: 28px;
 
   @include vp-1199 {
-    gap: 0;
-    justify-content: space-between;
+    gap: 61px;
   }
 
   @include vp-767 {

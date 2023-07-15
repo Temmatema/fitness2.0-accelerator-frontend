@@ -30,31 +30,32 @@
 
 .sidebar__wrap {
   height: 100%;
-  padding: 25px 28px 27px;
+  padding: 24px 28px 27px;
   background-color: $color-default-white;
   display: flex;
   flex-direction: column;
 
   @include vp-1199 {
+    padding-top: 21px;
     padding-bottom: 27px;
   }
 
   @include vp-767 {
     flex: 1;
     align-items: center;
-    padding-top: 36px;
+    padding-top: 33px;
   }
 }
 
 .sidebar__wrap h3 {
-  font-size: 1.39rem;
+  font-size: 1.4em;
   font-weight: 700;
   line-height: normal;
   font-family: $ff-roboto;
   margin-bottom: 13px;
 
   span {
-    font-size: 1.44rem;
+    font-size: 1.15em;
   }
 
   @include vp-1199 {

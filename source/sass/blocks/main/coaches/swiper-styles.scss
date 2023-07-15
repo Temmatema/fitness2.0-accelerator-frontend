@@ -21,11 +21,7 @@
   position: relative;
   overflow: hidden;
   max-height: 294px;
-  max-width: 1460px;
-
-  @media (max-width: 1728px) {
-    max-width: 1159px;
-  }
+  max-width: 1159px;
 
   @media (max-width: 1360px) {
     width: 860px;
@@ -93,7 +89,7 @@
 }
 
 .button-prev {
-  left: -4.6vw;
+  left: -73px;
 
   @media (max-width: 1360px) {
     left: 0;
@@ -110,7 +106,7 @@
 }
 
 .button-next {
-  right: -4.7vw;
+  right: -73px;
   transform: rotateZ(180deg);
 
   @media (max-width: 1360px) {
