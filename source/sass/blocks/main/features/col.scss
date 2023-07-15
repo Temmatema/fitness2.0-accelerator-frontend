@@ -98,10 +98,6 @@
   }
 }
 
-.col__left span {
-  font-family: $ff-roboto;
-}
-
 .col-midl {
   flex-direction: column;
   grid-column: 2/3;
@@ -220,6 +216,7 @@
 }
 
 .col__left span {
+  font-family: $ff-roboto;
   font-size: 0.7rem;
   color: #2e35ac;
   line-height: 1;

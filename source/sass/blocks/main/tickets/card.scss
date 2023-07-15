@@ -6,7 +6,7 @@
     background: linear-gradient(169deg, rgba(209, 10, 66, 1) 0%, rgba(0, 53, 159, 1) 100%);
 
     .card__button {
-      background: linear-gradient(104deg,#ed0233 10%,#184eba 90%);
+      background: linear-gradient(104deg, #ed0233 10%, #184eba 90%);
       border: none;
       color: #ffffff;
     }
@@ -32,20 +32,20 @@
 
 .card .card__button {
   @include hover {
-    background: linear-gradient(104deg,#ed0233 10%,#184eba 90%);
+    background: linear-gradient(104deg, #ed0233 10%, #184eba 90%);
     border: none;
     color: #ffffff;
   }
 
   @include focus {
     outline: none;
-    background: linear-gradient(104deg,#ed0233 10%,#184eba 90%);
+    background: linear-gradient(104deg, #ed0233 10%, #184eba 90%);
     border: none;
     color: #ffffff;
   }
 
   &:active {
-    background: linear-gradient(104deg,#ed0233 10%,#184eba 90%);
+    background: linear-gradient(104deg, #ed0233 10%, #184eba 90%);
     border: none;
     color: rgba(255, 255, 255, 0.6);
   }
