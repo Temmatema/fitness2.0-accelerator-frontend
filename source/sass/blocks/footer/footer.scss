@@ -76,14 +76,17 @@
   line-height: normal;
   letter-spacing: 0.52px;
   text-transform: uppercase;
-  padding-top: 9px;
+  padding-top: 12px;
+  width: 86px;
 
   @include vp-1199 {
     padding-top: 0;
     font-size: 24px;
+    width: 80px;
   }
 
   @include vp-767 {
+    width: 67px;
     font-size: 20px;
   }
 }

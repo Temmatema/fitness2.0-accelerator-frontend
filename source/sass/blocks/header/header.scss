@@ -33,6 +33,10 @@
     padding-top: 40px;
   }
 
+  @include vp-767 {
+    gap: 90px;
+  }
+
   @include vp-319 {
     padding-top: 15px;
   }
@@ -49,14 +53,19 @@
   letter-spacing: 0.72px;
   text-transform: uppercase;
   line-height: 40px;
+  padding: 8px 0;
 
   @include vp-1199 {
     font-size: 24px;
     letter-spacing: 0.6px;
     line-height: 20px;
+    width: 82px;
+    padding: 0;
   }
 
   @include vp-319 {
+    padding: 6px 0;
+    width: 67px;
     font-size: 20px;
     line-height: 22px;
     letter-spacing: 0.4px;
