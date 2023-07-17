@@ -51,7 +51,7 @@
     padding: 0;
     row-gap: 45px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 240px 1fr;
+    grid-template-rows: auto auto 1fr;
   }
 
   @include vp-767 {

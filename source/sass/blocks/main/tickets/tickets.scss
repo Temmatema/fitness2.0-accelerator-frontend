@@ -141,13 +141,12 @@
 .tickets__cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 2.93vw;
+  gap: 41px;
 
   @include vp-1199 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 41px;
   }
 
   @include vp-319 {

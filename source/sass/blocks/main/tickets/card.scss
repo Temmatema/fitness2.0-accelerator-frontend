@@ -31,7 +31,7 @@
 }
 
 .card .card__button {
-  @include hover {
+  &:hover {
     background: linear-gradient(104deg, #ed0233 10%, #184eba 90%);
     border: none;
     color: #ffffff;

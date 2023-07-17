@@ -11,15 +11,10 @@
   min-height: 658px;
   position: relative;
   padding-bottom: 32px;
-  background-image: url("../img/header-background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: $color-default-sapphire;
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%,#b80027 -46.69deg,#003d85 32.24deg,#b80027 313.31deg,#003d85 392.24deg);
 
   @include vp-1199 {
     min-height: 554px;
-    background-image: url("../img/header-background-tablet.png");
-    background-size: cover;
     padding-bottom: 0;
   }
 
@@ -253,7 +248,7 @@
     color: $color-egyptian-blue;
   }
 
-  @include hover {
+  &:hover {
     background-color: $color-default-white;
     color: $color-egyptian-blue;
   }
